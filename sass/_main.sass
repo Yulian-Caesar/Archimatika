@@ -1,0 +1,111 @@
+
+
+/* 1. MAIN ================== */
+
+.main 
+	position: relative
+	overflow: hidden
+	min-height: 100%
+
+.wrapper
+	position: relative
+	max-width: 1200px
+	min-width: 320px
+	padding: 0 15px
+	margin-right: auto 
+	margin-left: auto
+
+
+.text-left
+	text-align: left !important
+
+.text-right
+	text-align: right !important
+
+
+/* 2. ICONS ================== */
+.ic 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	background: $icons no-repeat
+
+
+@each $i in next, prev
+	.ic--#{$i}
+		+s(ic--#{$i})
+
+
+/* 2. BUTTON ================== */
+
+
+.btn, a.btn 
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	padding: 10px 20px 0
+	height: 40px
+	font: normal 14px/14px Arial, sans-serif
+	+tr(all 0.2s linear)
+	border-radius: 5px
+	background: transparent
+	border: none 
+
+input[type="submit"].btn, button.btn
+	padding-top: 0
+
+
+/* 3. FORM ================== */
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea
+	height: 40px
+	padding: 0 15px
+	font: normal 14px/14px Arial, sans-serif
+	color: #000
+	background: #fff 
+	border: 1px solid #ccc
+	&.form-control
+		display: block
+		width: 100%
+
+textarea
+	resize: none 
+	height: auto
+	min-height: 100px
+	padding-top: 10px
+
+label 
+	display: block
+
+
+/* 4. HEADER ================== */
+header 
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+
+
+/* 5. CONTENT ================== */
+
+.content 
+
+
+/* 6. FOOTER ================== */
+footer 
+	position: absolute
+	left: 0
+	width: 100%
+	bottom: 0
+
+
+/* 7. MEDIA ================== */
+
+
+
+
+
